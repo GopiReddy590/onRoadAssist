@@ -7,7 +7,7 @@ from sqlalchemy.orm import defaultload
 import psycopg2
 
 app=Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:gopireddy@localhost/onroad"
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://qfehkayaqurkii:4ca8a1d0027ca4b9112a2224e5d5ffec1649a499569082c12c68b66f90798a09@ec2-18-207-72-235.compute-1.amazonaws.com:5432/d4m3fuumk8tmu2"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.config['SECRET_KEY'] = 'thisismykey'
 db = SQLAlchemy(app)
