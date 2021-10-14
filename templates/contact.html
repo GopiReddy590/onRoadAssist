@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<title>OnRoad Assist</title>
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="shortcut icon" type="image/x-icon" href="../static/assets/img/Group 9.svg" />
+	<!-- Place favicon.ico in the root directory -->
+
+	<!-- ========================= CSS here ========================= -->
+	<link rel="stylesheet" href="../static/assets/css/bootstrap-5.0.0-alpha-2.min.css" />
+	<link rel="stylesheet" href="../static/assets/css/LineIcons.2.0.css" />
+	<link rel="stylesheet" href="../static/assets/css/animate.css" />
+	<link rel="stylesheet" href="../static/assets/css/main.css" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+
+	<!-- ========================= preloader start ========================= -->
+	<div class="preloader">
+		<div class="loader">
+			<div class="ytp-spinner">
+				<div class="ytp-spinner-container">
+					<div class="ytp-spinner-rotator">
+						<div class="ytp-spinner-left">
+							<div class="ytp-spinner-circle"></div>
+						</div>
+						<div class="ytp-spinner-right">
+							<div class="ytp-spinner-circle"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- preloader end -->
+
+	<!-- ========================= header start ========================= -->
+	<header class="header" id="head">
+		<div class="navbar-area">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-12">
+						<nav class="navbar navbar-expand-lg">
+							<a class="navbar-brand" href="/">
+								<img src="../static/assets/img/logo/logoo (4).svg" alt="Logo" />
+							</a>
+							<button class="navbar-toggler" type="button" data-toggle="collapse"
+								data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+								aria-expanded="false" aria-label="Toggle navigation">
+								<span class="toggler-icon"></span>
+								<span class="toggler-icon"></span>
+								<span class="toggler-icon"></span>
+							</button>
+
+							<div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+								<ul id="nav" class="navbar-nav ml-auto">
+									<li class="nav-item">
+										<a  href="/" style="text-decoration:none;" >Home</a>
+									</li>
+									<!-- <li class="nav-item">
+										<a class="page-scroll" href="#about"style="text-decoration:none;">Service</a>
+									</li> -->
+									<!-- <li class="nav-item">
+										<a class="page-scroll" href="#about"style="text-decoration:none;">About Us</a>
+									</li> -->
+
+									<!-- <li class="nav-item">
+										<a class="page-scroll" href="#pricing"style="text-decoration:none;">Pricing</a>
+									</li> -->
+									<!-- <li class="nav-item">
+										<a class="page-scroll" href="#contact"style="text-decoration:none;">Contact</a>
+									</li> -->
+								</ul>
+							</div>
+							<!-- navbar collapse -->
+						</nav>
+						<!-- navbar -->
+					</div>
+				</div>
+				<!-- row -->
+			</div>
+			<!-- container -->
+		</div>
+		<!-- navbar area -->
+	</header>
+	<!-- ========================= header end ========================= -->
+
+	<!-- ========================= hero-section start ========================= -->
+
+
+
+
+
+
+	
+
+	<!-- ========================= contact-section start ========================= -->
+	<section id="contact" class="contact-section pt-50 pb-80 mt-80">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-xl-5">
+					<div class="section-title mb-60">
+						<h1 class="mb-25 wow fadeInUp" data-wow-delay=".2s">One Step Away For Service</h1>
+						<p class="wow fadeInUp" data-wow-delay=".4s"></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col">
+					<div class="contact-wrapper wow fadeInUp" data-wow-delay=".2s">
+						<form action="{{url_for('posted')}}" method="POST" id="contact-form" class="contact-form">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="single-form">
+										<input type="text" name="name" id="name" class="form-input"
+											placeholder="Your Name" required/>
+									</div>
+								</div>
+                                <input type="hidden" id="v-type" name="v-type" value={{type}} />
+                                <input type="hidden" id="problem" name="problem" value={{problem}} />
+								<div class="col-md-6">
+									<div class="single-form">
+										<input type="number" name="number" id="number" class="form-input"
+											placeholder="Number" required/>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="single-form">
+										<div class="form-group col-md-6">
+                                            <label for="inputState"></label>
+                                            <select id="inputState" class="form-input" name="area" required>
+                                              <option selected>Select Nearest Area</option>
+                                              <option value="Ashok Nager" >Ashok Nager</option>
+                                              <option value="mini-bypass">Mini-Bypass road</option>
+                                              <option value="santhinager">Santhi Nager</option>
+                                              <option value="vatluru">Vatluru</option>
+                                              <option value="sanivarapata">Sanivarapata</option>
+                                              <option value="satrampadu">Satrampadu</option>
+                                              <option value="dmart"> D-mart</option>
+                                              <option value="12 pipes center">12 pipes center</option>
+                                              <option value="old bus stand" >Old Bus Stand </option>
+                                              <option value="new bus stand" >New Bus Stand </option>
+                                              <option value="Eluru Railway Station">Eluru Railway Station</option>
+                                              <option value="Powerpet Railway Station">Powerpet Railway Station </option>
+                                            </select>
+                                          </div>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="submit-btn text-center">
+										<button class="main-btn btn-hover" type="submit">Get Service</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<!-- <div class="col-lg-5">
+					<div class="contact-img wow fadeInUp" data-wow-delay=".5s">
+						<img src="../static/assets/img/contact/contact-img.jpg" alt="">
+					</div>
+				</div> -->
+			</div>
+		</div>
+	</section>
+	<!-- ========================= contact-section end ========================= -->
+
+	<!-- ========================= footer start ========================= -->
+	<footer class="footer">
+		<div class="container">
+			<!-- <div class="widget-wrapper">
+				<div class="row">
+					<div class="col-lg-4 col-md-6">
+						<div class="footer-widget">
+							<div class="logo">
+								<a href="index.html"> <img src="../static/assets/img/logo/logo-2.svg" alt=""> </a>
+							</div>
+							<p class="desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumrmod
+								tempor invidunt.</p>
+							<ul class="socials">
+								<li>
+									<a href="javascript:void(0)"> <i class="lni lni-facebook-filled"></i> </a>
+								</li>
+								<li>
+									<a href="javascript:void(0)"> <i class="lni lni-twitter-filled"></i> </a>
+								</li>
+								<li>
+									<a href="javascript:void(0)"> <i class="lni lni-instagram-filled"></i> </a>
+								</li>
+								<li>
+									<a href="javascript:void(0)"> <i class="lni lni-linkedin-original"></i> </a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-6">
+						<div class="footer-widget">
+							<h3>Quick Link</h3>
+							<ul class="links">
+								<li><a href="javascript:void(0)">Home</a></li>
+								<li><a href="javascript:void(0)">About</a></li>
+								<li><a href="javascript:void(0)">Service</a></li>
+								<li><a href="javascript:void(0)">Pricing</a></li>
+								<li><a href="javascript:void(0)">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="footer-widget">
+							<h3>Help & Support</h3>
+							<ul class="links">
+								<li><a href="javascript:void(0)">Case Studies</a></li>
+								<li><a href="javascript:void(0)">Work Process</a></li>
+								<li><a href="javascript:void(0)">Resource</a></li>
+								<li><a href="javascript:void(0)">FAQ</a></li>
+								<li><a href="javascript:void(0)">Terms & Condition</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="footer-widget">
+							<h3>Contact</h3>
+							<ul class="info">
+								<li>+098333452676</li>
+								<li>hellomail@gmail.com</li>
+								<li>United state of America
+									*123 zindabajar</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div> -->
+
+			<div class="copy-right">
+				<p class="text-center">Designed and Developed by <a href="https://www.linkedin.com/in/gopi-reddy-655790207/" target="_blank" style="color:#ffb109"
+						rel="nofollow">GopiReddy</a> </p>
+			</div>
+		</div>
+	</footer>
+	<!-- ========================= footer end ========================= -->
+
+	<!-- ========================= scroll-top ========================= -->
+	<a href="https://api.whatsapp.com/send?phone=919491976618&text=Hey!%20I%20Need%20Help " class="scroll-top btn-hover">
+		<i class="bi bi-whatsapp" style="font-size: 2rem; color: rgb(255, 255, 255);"></i>
+	</a>
+
+	<!-- ========================= JS here ========================= -->
+	<script src="../static/assets/js/bootstrap.5.0.0.alpha-2-min.js"></script>
+	<script src="../static/assets/js/count-up.min.js"></script>
+	<script src="../static/assets/js/imageloaded.min.js"></script>
+	<script src="../static/assets/js/wow.min.js"></script>
+	<script src="../static/assets/js/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+		integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+		integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
